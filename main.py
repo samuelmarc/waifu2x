@@ -10,7 +10,6 @@ import random
 from requests_toolbelt import MultipartEncoder
 import requests
 import urllib3
-import uvloop
 urllib3.disable_warnings()
 
 api_id = '<YOUR_API_ID>'
@@ -18,8 +17,6 @@ api_hash = '<YOUR_API_HASH>'
 bot_token = '<YOUR_BOT_TOKEN>'
 image_mime_types = ['image/jpeg', 'image/png']
 api_convert = 'https://api.alcaamado.es/api/v1/waifu2x/convert'
-
-uvloop.install()
 
 waifu2x = Client(name='waifu2x', api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 waifu2x.set_parse_mode(ParseMode.HTML)
