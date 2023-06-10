@@ -2,4 +2,3 @@ Pyrogram
 TgCrypto
 pyroaddon
 requests_toolbelt
-uvloop
